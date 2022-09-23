@@ -15,6 +15,7 @@ stages:
 build-rootfs:
     stage: build-rootfs
     image: debian:testing
+    tags: [ saas-linux-medium-amd64 ]
     artifacts:
         paths:
             - "*.tar.gz"
