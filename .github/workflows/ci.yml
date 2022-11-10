@@ -13,9 +13,8 @@ on:
 env:
   # NB: Images will appear in this order on the Docker Hub, so keep everything
   # sorted per order of importance here, both architectures and images.
-  BASE_IMAGES: "kali-rolling kali-last-release kali-dev"
-  EXTRA_IMAGES: "kali-bleeding-edge kali-experimental"
-  ARCHS: "amd64 arm64 armhf"
+  BASE_IMAGES: "kali-rolling"
+  ARCHS: "amd64"
 
 jobs:
   build-rootfs:
